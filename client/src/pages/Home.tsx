@@ -20,18 +20,19 @@ const Home: React.FC = () => {
         <div className="hero-content">
           <div className="flex flex-col md:flex-row items-center justify-center max-w-6xl mx-auto p-8 gap-8">
             <div className="flex-none w-[300px]">
-              <div className="w-[300px] h-[300px] rounded-full border-[3px] border-neutral-300 bg-white object-cover shadow-md flex items-center justify-center">
-                <span className="text-neutral-500 font-medium">Profile Image</span>
+              <div className="w-[300px] h-[300px] rounded-full border-[3px] border-neutral-300 bg-white shadow-md overflow-hidden">
+                <img 
+                  src="https://res.cloudinary.com/jerrick/image/upload/d_642250b563292b35f27461a7.png,f_jpg,q_auto,w_720/67344c856c473c001d68c10b.png" 
+                  alt="Manan Sharma" 
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
             <div className="flex-1">
               <h1 className="text-4xl mb-2 text-primary font-bold">Hi, I'm Manan Sharma</h1>
               <p className="text-xl text-neutral-600 mb-4 font-medium">Data Analysis & DevOps Professional</p>
               <p className="mb-6 leading-relaxed text-neutral-700">
-                I'm a passionate data analyst and DevOps professional with expertise in transforming complex
-                data into actionable insights. With a strong background in statistical analysis, cloud
-                infrastructure, and software development, I help organizations make data-driven decisions and optimize their
-                technological processes.
+                I'm a passionate data analyst and Machine learning Enthusiast with expertise in transforming complex data into actionable insights. With a strong background in statistical analysis, cloud infrastructure, and software development, I help organizations make data-driven decisions and optimize their technological processes.
               </p>
               <div className="flex gap-4">
                 <a href="https://linkedin.com/in/yourprofile" target="_blank" className="text-2xl text-primary hover:text-neutral-600 transition-colors hover:scale-110">
@@ -76,13 +77,13 @@ const Home: React.FC = () => {
         <h2 className="text-3xl mb-8 font-bold text-primary">Featured Projects</h2>
         <div className="flex flex-col md:flex-row justify-center gap-5 mt-8">
           <div className="bg-white p-6 rounded-lg shadow-lg transition-transform hover:-translate-y-2 hover:shadow-xl border border-neutral-200">
-            <h3 className="text-xl mb-2 font-semibold text-primary">Data Visualization Dashboard</h3>
-            <p className="mb-4 text-foreground">Interactive web app for real-time data analysis</p>
+            <h3 className="text-xl mb-2 font-semibold text-primary">Stock Price Prediction</h3>
+            <p className="mb-4 text-foreground">Stock price prediction involves using historical data, machine learning models, and statistical techniques to forecast future stock prices. It helps investors make informed decisions by analyzing trends, patterns, and market conditions.</p>
             <a href="#" className="inline-block px-5 py-2 bg-primary text-white rounded-lg transition-all hover:shadow-md hover:opacity-80">View Project</a>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg transition-transform hover:-translate-y-2 hover:shadow-xl border border-neutral-200">
-            <h3 className="text-xl mb-2 font-semibold text-primary">DevOps Automation Tool</h3>
-            <p className="mb-4 text-foreground">Streamlined deployment and infrastructure management</p>
+            <h3 className="text-xl mb-2 font-semibold text-primary">YouTube Data Scraping</h3>
+            <p className="mb-4 text-foreground">YouTube data scraping involves extracting video details like views, likes, and comments using web scraping or APIs. It helps in analyzing trends, user engagement, and content performance.</p>
             <a href="#" className="inline-block px-5 py-2 bg-primary text-white rounded-lg transition-all hover:shadow-md hover:opacity-80">View Project</a>
           </div>
         </div>
@@ -91,8 +92,13 @@ const Home: React.FC = () => {
       {/* Resume Section */}
       <section id="resume" className="py-16 px-8 text-center bg-white">
         <h2 className="text-3xl mb-8 font-bold text-primary">Professional Resume</h2>
-        <a href="/resume.pdf" download className="inline-block px-6 py-3 bg-primary text-white rounded-lg hover:shadow-lg transition-all font-medium hover:opacity-80">
-          <i className="fas fa-download mr-2"></i> Download Resume
+        <a 
+          href="https://drive.google.com/file/d/12xoh9qwohkIv4CcSWVtPFCzQ7LkhSkiW/view?usp=sharing" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="inline-block px-6 py-3 bg-primary text-white rounded-lg hover:shadow-lg transition-all font-medium hover:opacity-80"
+        >
+          <i className="fas fa-eye mr-2"></i> View Resume
         </a>
       </section>
 

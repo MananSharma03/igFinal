@@ -107,9 +107,12 @@ const Chatbot: React.FC = () => {
     // Predefined response map
     const responseMap: Record<string, string> = {
       'skills': 'I have expertise in data analysis, DevOps, and programming. My key skills include Python, C++, JavaScript, SQL, statistical modeling, and cloud infrastructure.',
-      'projects': 'I\'ve developed two key projects: a Data Visualization Dashboard for real-time data analysis and a DevOps Automation Tool for streamlined deployment processes.',
-      'experience': 'As a Data Analysis & DevOps Professional, I specialize in transforming complex data into actionable insights and optimizing technological processes.',
+      'projects': 'I\'ve developed two key projects: Stock Price Prediction using machine learning and historical data, and YouTube Data Scraping for analyzing trends and user engagement.',
+      'experience': 'As a Data Analysis & Machine Learning Enthusiast, I specialize in transforming complex data into actionable insights and optimizing technological processes.',
       'contact': 'You can reach me via email or connect with me on LinkedIn. Check out the contact section of my portfolio.',
+      'stock': 'My Stock Price Prediction project uses historical data, machine learning models, and statistical techniques to forecast future stock prices. It helps investors make informed decisions by analyzing trends, patterns, and market conditions.',
+      'youtube': 'My YouTube Data Scraping project involves extracting video details like views, likes, and comments using web scraping or APIs. It helps in analyzing trends, user engagement, and content performance.',
+      'resume': 'You can view my resume by clicking the "View Resume" button in the resume section. It will open my resume hosted on Google Drive.',
       'default': 'I can help you learn about my professional background. Feel free to ask about my skills, projects, or experience.'
     };
 
@@ -118,7 +121,10 @@ const Chatbot: React.FC = () => {
       'skills': ['skill', 'technical', 'programming', 'technology', 'know'],
       'projects': ['project', 'work', 'develop', 'create', 'built', 'portfolio'],
       'experience': ['experience', 'background', 'career', 'history', 'job'],
-      'contact': ['contact', 'reach', 'connect', 'email', 'message', 'hire']
+      'contact': ['contact', 'reach', 'connect', 'email', 'message', 'hire'],
+      'stock': ['stock', 'price', 'prediction', 'forecast', 'market', 'trading', 'investment'],
+      'youtube': ['youtube', 'video', 'scraping', 'data', 'comments', 'views', 'engagement'],
+      'resume': ['resume', 'cv', 'curriculum', 'vitae', 'qualification', 'document']
     };
 
     // Match user message with predefined keywords
