@@ -137,19 +137,19 @@ const Chatbot: React.FC = () => {
       {/* Chatbot Icon */}
       <div 
         id="chatbot-icon"
-        className="w-[60px] h-[60px] bg-primary rounded-full flex justify-center items-center cursor-pointer shadow-md transition-transform hover:scale-110"
+        className="w-[60px] h-[60px] bg-gradient-to-r from-primary to-secondary rounded-full flex justify-center items-center cursor-pointer shadow-md transition-transform hover:scale-110 hover:shadow-lg"
         onClick={handleToggleChatbot}
       >
         <i className="fas fa-comment-dots text-white text-2xl"></i>
       </div>
 
       {/* Chatbot Window */}
-      <div className={`chatbot-window absolute bottom-[80px] right-0 w-[350px] bg-white rounded-lg shadow-lg overflow-hidden ${isActive ? 'active' : ''}`}>
+      <div className={`chatbot-window absolute bottom-[80px] right-0 w-[350px] bg-white rounded-lg shadow-xl overflow-hidden ${isActive ? 'active' : ''}`}>
         {/* Chatbot Header */}
-        <div className="bg-primary text-white p-3 flex justify-between items-center">
-          <span>Ask about my Profile</span>
+        <div className="bg-gradient-to-r from-primary to-secondary text-white p-3 flex justify-between items-center">
+          <span className="font-medium">Ask about my Profile</span>
           <ButtonUnstyled 
-            className="chatbot-close bg-transparent border-none text-white text-2xl cursor-pointer"
+            className="chatbot-close bg-transparent border-none text-white text-2xl cursor-pointer hover:text-accent transition-colors"
             onClick={handleCloseChatbot}
           >
             &times;
@@ -160,15 +160,15 @@ const Chatbot: React.FC = () => {
         <div 
           id="chatbot-messages" 
           ref={messagesContainerRef}
-          className="h-[300px] overflow-y-auto p-4 bg-gray-50"
+          className="h-[300px] overflow-y-auto p-4 bg-accent/10"
         >
           {messages.map((msg, index) => (
             <div 
               key={index} 
-              className={`mb-3 p-3 rounded-lg max-w-[80%] ${
+              className={`mb-3 p-3 rounded-lg max-w-[80%] shadow-sm ${
                 msg.sender === 'user' 
-                  ? 'bg-primary text-white ml-auto' 
-                  : 'bg-gray-200 text-gray-800'
+                  ? 'bg-gradient-to-r from-primary to-secondary text-white ml-auto' 
+                  : 'bg-white text-gray-800 border border-accent/20'
               }`}
             >
               {msg.message}
@@ -177,7 +177,7 @@ const Chatbot: React.FC = () => {
         </div>
 
         {/* Chatbot Input */}
-        <div className="flex p-3 bg-white border-t border-gray-200">
+        <div className="flex p-3 bg-white border-t border-accent/30">
           <input 
             type="text" 
             id="user-input"
@@ -186,12 +186,12 @@ const Chatbot: React.FC = () => {
             onChange={handleInputChange}
             onKeyPress={handleKeyPress}
             placeholder="Type your query..." 
-            className="flex-grow p-2 border border-gray-300 rounded-lg mr-2"
+            className="flex-grow p-2 border border-accent/50 rounded-lg mr-2 focus:ring-2 focus:ring-secondary focus:border-transparent transition-all"
           />
           <button 
             id="send-btn"
             onClick={handleSendMessage}
-            className="bg-primary text-white border-none rounded-lg px-4 py-2 cursor-pointer"
+            className="bg-gradient-to-r from-primary to-secondary text-white border-none rounded-lg px-4 py-2 cursor-pointer hover:shadow-md transition-all"
           >
             <i className="fas fa-paper-plane"></i>
           </button>
