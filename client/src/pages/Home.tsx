@@ -50,23 +50,23 @@ const Home: React.FC = () => {
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className="py-16 px-8 text-center bg-accent">
+      <section id="skills" className="py-16 px-8 text-center bg-white">
         <h2 className="text-3xl mb-8 font-bold text-primary">Professional Skills</h2>
         <div className="flex flex-col md:flex-row justify-center gap-5 mt-8">
-          <div className="bg-white p-5 rounded-lg shadow-md transition-transform hover:-translate-y-2 border border-primary/20">
+          <div className="bg-white p-5 rounded-lg shadow-md transition-transform hover:-translate-y-2 border border-neutral-200">
             <i className="fas fa-chart-line text-3xl text-primary mb-4"></i>
             <h3 className="text-xl mb-2 font-semibold text-primary">Data Analysis</h3>
-            <p className="text-neutral-600">Advanced analytics, statistical modeling, data visualization</p>
+            <p className="text-foreground">Advanced analytics, statistical modeling, data visualization</p>
           </div>
-          <div className="bg-white p-5 rounded-lg shadow-md transition-transform hover:-translate-y-2 border border-primary/20">
-            <i className="fas fa-cloud text-3xl text-secondary mb-4"></i>
+          <div className="bg-white p-5 rounded-lg shadow-md transition-transform hover:-translate-y-2 border border-neutral-200">
+            <i className="fas fa-cloud text-3xl text-primary mb-4"></i>
             <h3 className="text-xl mb-2 font-semibold text-primary">DevOps</h3>
-            <p className="text-neutral-600">CI/CD, Cloud Infrastructure, Containerization</p>
+            <p className="text-foreground">CI/CD, Cloud Infrastructure, Containerization</p>
           </div>
-          <div className="bg-white p-5 rounded-lg shadow-md transition-transform hover:-translate-y-2 border border-primary/20">
+          <div className="bg-white p-5 rounded-lg shadow-md transition-transform hover:-translate-y-2 border border-neutral-200">
             <i className="fas fa-code text-3xl text-primary mb-4"></i>
             <h3 className="text-xl mb-2 font-semibold text-primary">Programming</h3>
-            <p className="text-neutral-600">Python, C++, JavaScript, SQL</p>
+            <p className="text-foreground">Python, C++, JavaScript, SQL</p>
           </div>
         </div>
       </section>
@@ -75,23 +75,23 @@ const Home: React.FC = () => {
       <section id="projects" className="py-16 px-8 text-center">
         <h2 className="text-3xl mb-8 font-bold text-primary">Featured Projects</h2>
         <div className="flex flex-col md:flex-row justify-center gap-5 mt-8">
-          <div className="bg-white p-6 rounded-lg shadow-lg transition-transform hover:-translate-y-2 hover:shadow-xl border border-accent">
+          <div className="bg-white p-6 rounded-lg shadow-lg transition-transform hover:-translate-y-2 hover:shadow-xl border border-neutral-200">
             <h3 className="text-xl mb-2 font-semibold text-primary">Data Visualization Dashboard</h3>
-            <p className="mb-4 text-neutral-600">Interactive web app for real-time data analysis</p>
-            <a href="#" className="inline-block px-5 py-2 bg-primary text-white rounded-lg transition-all hover:shadow-md hover:bg-secondary">View Project</a>
+            <p className="mb-4 text-foreground">Interactive web app for real-time data analysis</p>
+            <a href="#" className="inline-block px-5 py-2 bg-primary text-white rounded-lg transition-all hover:shadow-md hover:opacity-80">View Project</a>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg transition-transform hover:-translate-y-2 hover:shadow-xl border border-accent">
+          <div className="bg-white p-6 rounded-lg shadow-lg transition-transform hover:-translate-y-2 hover:shadow-xl border border-neutral-200">
             <h3 className="text-xl mb-2 font-semibold text-primary">DevOps Automation Tool</h3>
-            <p className="mb-4 text-neutral-600">Streamlined deployment and infrastructure management</p>
-            <a href="#" className="inline-block px-5 py-2 bg-primary text-white rounded-lg transition-all hover:shadow-md hover:bg-secondary">View Project</a>
+            <p className="mb-4 text-foreground">Streamlined deployment and infrastructure management</p>
+            <a href="#" className="inline-block px-5 py-2 bg-primary text-white rounded-lg transition-all hover:shadow-md hover:opacity-80">View Project</a>
           </div>
         </div>
       </section>
 
       {/* Resume Section */}
-      <section id="resume" className="py-16 px-8 text-center bg-accent/50">
+      <section id="resume" className="py-16 px-8 text-center bg-white">
         <h2 className="text-3xl mb-8 font-bold text-primary">Professional Resume</h2>
-        <a href="/resume.pdf" download className="inline-block px-6 py-3 bg-primary text-white rounded-lg hover:shadow-lg transition-all font-medium hover:bg-secondary">
+        <a href="/resume.pdf" download className="inline-block px-6 py-3 bg-primary text-white rounded-lg hover:shadow-lg transition-all font-medium hover:opacity-80">
           <i className="fas fa-download mr-2"></i> Download Resume
         </a>
       </section>
@@ -100,10 +100,10 @@ const Home: React.FC = () => {
       <section id="contact" className="py-16 px-8 text-center">
         <h2 className="text-3xl mb-8 font-bold text-primary">Get In Touch</h2>
         <form className="max-w-lg mx-auto flex flex-col gap-4">
-          <input type="text" placeholder="Your Name" required className="p-3 border border-primary/30 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all" />
-          <input type="email" placeholder="Your Email" required className="p-3 border border-primary/30 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all" />
-          <textarea placeholder="Your Message" required className="p-3 border border-primary/30 rounded-lg h-32 focus:ring-2 focus:ring-primary focus:border-transparent transition-all"></textarea>
-          <button type="submit" className="inline-block px-6 py-3 bg-primary text-white rounded-lg hover:shadow-lg transition-all font-medium hover:bg-secondary">Send Message</button>
+          <input type="text" placeholder="Your Name" required className="p-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all" />
+          <input type="email" placeholder="Your Email" required className="p-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all" />
+          <textarea placeholder="Your Message" required className="p-3 border border-neutral-300 rounded-lg h-32 focus:ring-2 focus:ring-primary focus:border-transparent transition-all"></textarea>
+          <button type="submit" className="inline-block px-6 py-3 bg-primary text-white rounded-lg hover:shadow-lg transition-all font-medium hover:opacity-80">Send Message</button>
         </form>
       </section>
 

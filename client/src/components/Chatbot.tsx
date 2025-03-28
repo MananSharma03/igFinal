@@ -160,7 +160,7 @@ const Chatbot: React.FC = () => {
         <div 
           id="chatbot-messages" 
           ref={messagesContainerRef}
-          className="h-[300px] overflow-y-auto p-4 bg-accent/30"
+          className="h-[300px] overflow-y-auto p-4 bg-white"
         >
           {messages.map((msg, index) => (
             <div 
@@ -168,7 +168,7 @@ const Chatbot: React.FC = () => {
               className={`mb-3 p-3 rounded-lg max-w-[80%] shadow-sm ${
                 msg.sender === 'user' 
                   ? 'bg-primary text-white ml-auto' 
-                  : 'bg-white text-gray-800 border border-primary/20'
+                  : 'bg-white text-foreground border border-neutral-300'
               }`}
             >
               {msg.message}
@@ -177,7 +177,7 @@ const Chatbot: React.FC = () => {
         </div>
 
         {/* Chatbot Input */}
-        <div className="flex p-3 bg-white border-t border-primary/10">
+        <div className="flex p-3 bg-white border-t border-neutral-200">
           <input 
             type="text" 
             id="user-input"
@@ -186,12 +186,12 @@ const Chatbot: React.FC = () => {
             onChange={handleInputChange}
             onKeyPress={handleKeyPress}
             placeholder="Type your query..." 
-            className="flex-grow p-2 border border-primary/30 rounded-lg mr-2 focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+            className="flex-grow p-2 border border-neutral-300 rounded-lg mr-2 focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
           />
           <button 
             id="send-btn"
             onClick={handleSendMessage}
-            className="bg-primary text-white border-none rounded-lg px-4 py-2 cursor-pointer hover:bg-secondary transition-colors"
+            className="bg-primary text-white border-none rounded-lg px-4 py-2 cursor-pointer hover:opacity-80 transition-opacity"
           >
             <i className="fas fa-paper-plane"></i>
           </button>
