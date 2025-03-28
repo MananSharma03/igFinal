@@ -6,7 +6,7 @@ const Home: React.FC = () => {
     <>
       {/* Navbar */}
       <nav className="flex justify-between items-center px-[5%] py-4 bg-primary text-white sticky top-0 z-10 shadow-md">
-        <div className="text-2xl font-bold">Manan Sharma</div>
+        <div className="text-2xl font-bold">Manan</div>
         <ul className="flex list-none">
           <li className="ml-5"><a href="#home" className="text-white hover:text-accent transition-colors font-medium">Home</a></li>
           <li className="ml-5"><a href="#skills" className="text-white hover:text-accent transition-colors font-medium">Skills</a></li>
@@ -23,25 +23,25 @@ const Home: React.FC = () => {
               <div className="w-[300px] h-[300px] rounded-full border-[3px] border-neutral-300 bg-white shadow-md overflow-hidden">
                 <img 
                   src="https://res.cloudinary.com/jerrick/image/upload/d_642250b563292b35f27461a7.png,f_jpg,q_auto,w_720/67344c856c473c001d68c10b.png" 
-                  alt="Manan Sharma" 
+                  alt="Manan" 
                   className="w-full h-full object-cover"
                 />
               </div>
             </div>
             <div className="flex-1">
-              <h1 className="text-4xl mb-2 text-primary font-bold">Hi, I'm Manan Sharma</h1>
+              <h1 className="text-4xl mb-2 text-primary font-bold">Hi, I'm Manan</h1>
               <p className="text-xl text-neutral-600 mb-4 font-medium">Data Analysis & DevOps Professional</p>
               <p className="mb-6 leading-relaxed text-neutral-700">
                 I'm a passionate data analyst and Machine learning Enthusiast with expertise in transforming complex data into actionable insights. With a strong background in statistical analysis, cloud infrastructure, and software development, I help organizations make data-driven decisions and optimize their technological processes.
               </p>
               <div className="flex gap-4">
-                <a href="https://linkedin.com/in/yourprofile" target="_blank" className="text-2xl text-primary hover:text-neutral-600 transition-colors hover:scale-110">
+                <a href="https://www.linkedin.com/in/manan-sharma-446886207/" target="_blank" rel="noopener noreferrer" className="text-2xl text-primary hover:text-neutral-600 transition-colors hover:scale-110">
                   <i className="fab fa-linkedin"></i>
                 </a>
-                <a href="https://github.com/yourprofile" target="_blank" className="text-2xl text-primary hover:text-neutral-600 transition-colors hover:scale-110">
+                <a href="https://github.com/MananSharma03" target="_blank" rel="noopener noreferrer" className="text-2xl text-primary hover:text-neutral-600 transition-colors hover:scale-110">
                   <i className="fab fa-github"></i>
                 </a>
-                <a href="mailto:youremail@example.com" className="text-2xl text-primary hover:text-neutral-600 transition-colors hover:scale-110">
+                <a href="mailto:manan.sharma.ece22@itbhu.ac.in" className="text-2xl text-primary hover:text-neutral-600 transition-colors hover:scale-110">
                   <i className="fas fa-envelope"></i>
                 </a>
               </div>
@@ -118,7 +118,7 @@ const Home: React.FC = () => {
 
       {/* Footer */}
       <footer className="bg-primary text-white text-center py-6 shadow-md">
-        <p>© 2023 Manan Sharma. All Rights Reserved.</p>
+        <p>© 2023 Manan. All Rights Reserved.</p>
       </footer>
 
       {/* Font Awesome */}

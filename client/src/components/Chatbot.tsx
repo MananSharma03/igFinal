@@ -19,7 +19,7 @@ const Chatbot: React.FC = () => {
       setMessages([
         { 
           sender: 'bot', 
-          message: "Hi there! How can I help you learn about Manan's professional background?" 
+          message: "Hi there! How can I help you learn about Manan's professional background and projects?" 
         }
       ]);
     }
@@ -109,7 +109,7 @@ const Chatbot: React.FC = () => {
       'skills': 'I have expertise in data analysis, DevOps, and programming. My key skills include Python, C++, JavaScript, SQL, statistical modeling, and cloud infrastructure.',
       'projects': 'I\'ve developed two key projects: Stock Price Prediction using machine learning and historical data, and YouTube Data Scraping for analyzing trends and user engagement.',
       'experience': 'As a Data Analysis & Machine Learning Enthusiast, I specialize in transforming complex data into actionable insights and optimizing technological processes.',
-      'contact': 'You can reach me via email or connect with me on LinkedIn. Check out the contact section of my portfolio.',
+      'contact': 'You can reach me via email at manan.sharma.ece22@itbhu.ac.in or connect with me on LinkedIn and GitHub. You can also use the contact form on my portfolio.',
       'stock': 'My Stock Price Prediction project uses historical data, machine learning models, and statistical techniques to forecast future stock prices. It helps investors make informed decisions by analyzing trends, patterns, and market conditions.',
       'youtube': 'My YouTube Data Scraping project involves extracting video details like views, likes, and comments using web scraping or APIs. It helps in analyzing trends, user engagement, and content performance.',
       'resume': 'You can view my resume by clicking the "View Resume" button in the resume section. It will open my resume hosted on Google Drive.',
